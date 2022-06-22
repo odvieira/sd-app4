@@ -1,0 +1,37 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "e4fd743663a22a7204d0efcf26817f932629e031f5a15af4e55809e0e72c1de2"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.10"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "pyro4": {
+            "hashes": [
+                "sha256:511f5b0804e92dd77dc33adf9c947787e3f9e9c5a96b12162f0557a7c4ce21fb",
+                "sha256:bbf5d7413e616d3e1978a05d7caca62eec59692d2dab75dd22a4426ef9b8a691"
+            ],
+            "index": "pypi",
+            "version": "==4.82"
+        },
+        "serpent": {
+            "hashes": [
+                "sha256:10b34e7f8e3207ee6fb70dcdc9bce473851ee3daf0b47c58aec1b48032ac11ce",
+                "sha256:14d531cedeed593e793bae4e14eb1463445e8b161cb24ddf795800a50973d3d3"
+            ],
+            "markers": "python_version >= '3.2'",
+            "version": "==1.40"
+        }
+    },
+    "develop": {}
+}
