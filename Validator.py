@@ -1,8 +1,19 @@
 from Pyro4 import expose, behavior, Daemon, locateNS, Proxy
+import pandas as pd
 
+@expose
+@behavior(instance_mode="single")
 class Validator():
     def __init__(self) -> None:
-        pass
+        self.users = pd.read_csv('./user_list.csv')
+        self.coordinator_ref = Proxy(
+            "PYRONAME:{0}"
+            .format('server.coordinator')
+        )
+
+    def validate(self, user_id):
+        # Search DataFrame for user
+        return True
 
 if __name__ == '__main__':
     daemon = Daemon()                # make a Pyro daemon
